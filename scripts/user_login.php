@@ -1,9 +1,8 @@
 <?php
-if(isset($_POST['submit'])) {
+    session_start();
+    require('./database_connection.php');
 
-    require('./scripts/database_connection.php');
-
-    if ($stmt = $con->prepare("SELECT name, password FROM `users` where name = ?")) {
+    if ($stmt = $conn->prepare("SELECT name, password FROM `users` where name = ?")) {
 	$stmt->bind_param('s', $_POST['name']);
 	$stmt->execute();
 	// Store the result so we can check if the account exists in the database.
