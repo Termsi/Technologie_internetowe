@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <div></div>
-            <div>Superksiążki.com</div>
-            <div></div>
-        </nav>
+        <?php require('./elements/header.php'); ?>
         <main>
             <h1>Zaloguj Się!</h1>
             <form class="forms" action="" method="post">
@@ -24,32 +24,11 @@
         </main>
         <div id="sidebarl">sidebarl</div>
         <div id="sidebarr">sidebarr</div>
-        <footer>
-            <p>Najlepsze książki o mnie i Twojej matce</p>
-        </footer>
-
+        <?php require('./elements/footer.php'); ?>
     </div>
 </body>
 
 </html>
 
-<!-- <?php
-require('./elements/head.php');
-?>
-<div class="content">
-    <form action="" method="get">
-        <input type="text" placeholder="Search">
-    </form>
-    <button>History</button>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Publish date</th>
-        </tr>
-    </table>
-</div>
-<?php
-require('./elements/footer.php');
-?> -->
+
+
